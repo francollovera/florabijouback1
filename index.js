@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
   res.send("Soy el server :)");
 });
 
-app.post("/create_preference", async (req, res) => {
+app.post("https://backflorab.vercel.app/create_preference", async (req, res) => {
   try {
     const body = {
       items: [
@@ -33,9 +33,9 @@ app.post("/create_preference", async (req, res) => {
         },
       ],
       back_urls: {
-        success: "https://www.youtube.com/@onthecode",
-        failure: "https://www.youtube.com/@onthecode",
-        pending: "https://www.youtube.com/@onthecode",
+        success: "https://florafront.vercel.app/",
+        failure: "https://florafront.vercel.app/",
+        pending: "https://florafront.vercel.app/",
       },
       auto_return: "approved",
     };
