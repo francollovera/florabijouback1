@@ -21,7 +21,7 @@ app.get("/", (req, res) => {
   res.send("Soy el server :)");
 });
 
-app.post("https://backflorab.vercel.app/create_preference", async (req, res) => {
+app.post("https://florabijouback1.vercel.app/create_preference", async (req, res) => {
   try {
     const body = {
       items: [
