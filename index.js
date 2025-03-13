@@ -33,9 +33,9 @@ app.post("https://florabijouback1.vercel.app/create_preference", async (req, res
         },
       ],
       back_urls: {
-        success: "https://florafront.vercel.app/",
-        failure: "https://florafront.vercel.app/",
-        pending: "https://florafront.vercel.app/",
+        success: "https://florafront1.vercel.app/",
+        failure: "https://florafront1.vercel.app/",
+        pending: "https://florafront1.vercel.app/",
       },
       auto_return: "approved",
     };
