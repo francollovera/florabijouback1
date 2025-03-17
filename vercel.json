@@ -1,7 +1,7 @@
 {
     "version": 2,
     "builds": [
-      {"src": "index.js", 
+      {"src": "server/index.js", 
       "use": "@vercel/node"}
     ],
     "routes": [
@@ -13,8 +13,8 @@
     
      "rewrites": [
         {
-            "source": "/create_preference",
-            "destination": "/api/create_preference"
+            "source": "api/create_preference",
+            "destination": "server/index.js"
         }
     ]
   }
