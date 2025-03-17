@@ -20,6 +20,9 @@ app.use(express.json());
 app.get("/", (req, res) => {
   res.send("Soy el server :)");
 });
+app.get("/api", (req, res) => {
+  res.send("Soy la API :)");
+});
 
 app.post("/create_preference", async (req, res) => {
   console.log("Cuerpo recibido:", req.body);
