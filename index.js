@@ -7,11 +7,11 @@ dotenv.config();
 import { MercadoPagoConfig, Preference } from "mercadopago";
 // Agrega credenciales
 const client = new MercadoPagoConfig({
-  accessToken: process.env.MP_ACCESS_TOKEN,
+  accessToken: "APP_USR-8756355838713146-090922-92a14ee2d300c1ef80751bfac4bf6a23-23016067",
 });
 
 const app = express();
-const port = process.env.PORT || 3000;
+const port = 3000;
 
 
 app.use(cors());
@@ -21,7 +21,8 @@ app.get("/", (req, res) => {
   res.send("Soy el server :)");
 });
 
-app.post("https://florabijouback1.vercel.app/create_preference", async (req, res) => {
+app.post("/create_preference", async (req, res) => {
+  console.log("Cuerpo recibido:", req.body);
   try {
     const body = {
       items: [

@@ -9,5 +9,12 @@
         "src": "/(.*)",
         "dest": "/"
       }
+    ],
+    
+     "rewrites": [
+        {
+            "source": "/create_preference",
+            "destination": "/api/create_preference"
+        }
     ]
   }
